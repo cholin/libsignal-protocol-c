@@ -613,7 +613,7 @@ typedef struct signal_protocol_identity_key_store {
      *     registration ID, if it was successfully retrieved.
      * @return 0 on success, negative on failure
      */
-    int (*get_local_registration_id)(void *user_data, uint32_t *registration_id);
+    int (*get_local_registration_id)(uint32_t *registration_id, void *user_data);
 
     /**
      * Save a remote client's identity key

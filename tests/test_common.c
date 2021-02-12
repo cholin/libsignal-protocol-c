@@ -623,7 +623,7 @@ int test_identity_key_store_get_identity_key_pair(signal_buffer **public_data, s
     return 0;
 }
 
-int test_identity_key_store_get_local_registration_id(void *user_data, uint32_t *registration_id)
+int test_identity_key_store_get_local_registration_id(uint32_t *registration_id, void *user_data)
 {
     test_identity_store_data *data = user_data;
     *registration_id = data->local_registration_id;
